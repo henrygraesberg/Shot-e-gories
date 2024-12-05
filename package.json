@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "Henry Graesberg",
   "license": "MIT",
-  "description": "",
+  "description": "An API for getting a random category for a game of categories, and potentially a letter for a game of shotegories",
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.1"
