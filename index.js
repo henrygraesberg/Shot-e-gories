@@ -2,9 +2,6 @@ import express from 'express'
 import dotenv from 'dotenv'
 import fs from 'fs'
 
-import http from 'http'
-import https from 'https'
-
 const app = express()
 dotenv.config()
 
