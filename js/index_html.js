@@ -23,3 +23,5 @@ async function newCategory(e) {
   categoryDiv.querySelector('p').innerText = data.category
   letterDiv.querySelector('p').innerText = data.letter ? data.letter : ''
 }
+
+newCategory({ preventDefault: () => {} })

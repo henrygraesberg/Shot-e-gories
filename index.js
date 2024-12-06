@@ -27,7 +27,7 @@ app.get('/api', (req, res) => {
 
     const category = parsed[Math.floor(Math.random() * parsed.length)]
 
-    const letter = req.query.withLetter ? alphabet[Math.floor(Math.random() * alphabet.length)] : req.query.withLetter
+    const letter = req.query.withLetter == "true" ? alphabet[Math.floor(Math.random() * alphabet.length)] : null
 
     if (letter) {
       res.send({
@@ -51,5 +51,6 @@ app.get('/api', (req, res) => {
 const httpPort = process.env.HTTP_PORT || 3000
 
 app.listen(httpPort, () => {
-  console.log(`Server is running on port ${httpPort}`)
+  console.log(`Server is running on port: http://localhost:${httpPort}`)
+  console.log(`API endpoint at:           http://localhost:${httpPort}/api`)
 })
