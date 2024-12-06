@@ -9,7 +9,7 @@ npm i
 
 node index.js
 ```
-to install dependencies and start the server. The API will run on ```localhost:3000/shotegories``` by default, but this can be changed by adding a ```.env``` file and setting ```HTTP_PORT``` to your desired port.
+to install dependencies and start the server. The API will run on ```localhost:3000/shotegories``` by default, but this can be changed by adding a ```.env``` file and setting ```HTTP_PORT``` to your desired port. Upon the server starting the port the server is running on will be printed to the console.
 
 The response is an object matching the following TypeScript interface:
 ```ts
