@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "dev": "node --watch .",
-    "start": "node ."
+    "dev": "npm i && clear && node --watch .",
+    "start": "npm i && clear && node ."
   },
   "keywords": [],
   "author": "Henry Graesberg <henry@graesberg.com> (https://graesberg.com)",
