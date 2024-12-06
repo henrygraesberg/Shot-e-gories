@@ -1,11 +1,13 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import fs from 'node:fs'
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+    
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const app = express()
 dotenv.config()
-
-const __dirname = import.meta.dirname
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html')
