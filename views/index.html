@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://em-content.zobj.net/source/apple/391/cocktail-glass_1f378.png" type="image/png">
+
+  <link rel="stylesheet" href="../index_html.css">
+
+  <title>Shotegories</title>
+</head>
+<body>
+  <h1>Shotegories</h1>
+
+  <form onsubmit="newCategory(event)">
+    <label for="withLetter">With Letter?</label>
+    <input name="withLetter" type="checkbox">
+
+    <button type="submit">Again!</button>
+  </form>
+
+  <div class="results-wrapper">
+    <div class="results" id="category">
+      <h2>Category</h2>
+      <p></p>
+    </div>
+
+    <div class="results" id="letter">
+      <h2>Letter</h2>
+      <p></p>
+    </div>
+  </div>
+
+  <script src="../index_html.js" defer></script>
+</body>
+</html>

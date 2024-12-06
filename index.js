@@ -5,9 +5,21 @@ const fs = require('fs')
 const app = express()
 dotenv.config()
 
-const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/views/index.html')
+})
 
-app.get('/shotegories', (req, res) => {
+app.get('/index_html.css', (req, res) => {
+  res.sendFile(__dirname + '/css/index_html.css')
+})
+
+app.get('/index_html.js', (req, res) => {
+  res.sendFile(__dirname + '/js/index_html.js')
+})
+
+app.get('/api', (req, res) => {
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
+
   try {
     const categories = fs.readFileSync('./data/categories.json')
 
