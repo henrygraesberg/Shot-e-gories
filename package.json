@@ -2,17 +2,17 @@
   "name": "shotegories",
   "version": "1.0.0",
   "main": "src/index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
-    "dev": "npm i && clear && node --watch .",
-    "start": "npm i && clear && node ."
+    "dev": "npm i && node --watch .",
+    "start": "npm i && node ."
   },
   "keywords": [],
   "author": "Henry Graesberg <henry@graesberg.com> (https://graesberg.com)",
   "license": "MIT",
   "description": "An API for getting a random category for a game of categories, and potentially a letter for a game of shotegories",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=16.0.0"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
