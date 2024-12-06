@@ -4,8 +4,11 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "dev": "npm i && node --watch .",
-    "start": "npm i && node ."
+    "idev": "npm i && node --watch .",
+    "istart": "npm i && node .",
+
+    "dev": "node --watch .",
+    "start": "node ."
   },
   "keywords": [],
   "author": "Henry Graesberg <henry@graesberg.com> (https://graesberg.com)",

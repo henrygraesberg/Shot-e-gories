@@ -10,7 +10,13 @@ From here it can be used the same as if it was running locally, with the query o
 **NOTE:** Glitch puts projects to sleep after 5 minutes inactivity, so the first query could take longer, as the server has to start back up upon receiving your request (It also runs ```npm i``` every time it spools up for some reason, so it could take quite a few seconds actually)
 
 ### Locally
-Once the repository has been cloned, run the commands
+Once the repository has been cloned, run the command
+```bash
+npm run istart #If you are running the server
+#OR
+npm run idev #If you are developing and want hot reload
+```
+Alternatively,
 ```bash
 npm i
 
@@ -21,14 +27,14 @@ node index.js
 #OR
 node .
 
-#If you're developing and want hot reload, then run
+#Or, if you're developing and want hot reload, instead run
 npm run dev
 #OR
 node --watch index.js
 #OR
 node --watch .
-#instead
 ```
+
 to install dependencies and start the server. A frontend simply supplying an html file and a request to the api wil run on ```localhost:3000```, while the API will run on ```http://localhost:3000/api``` by default, but this can be changed by adding a ```.env``` file and setting ```HTTP_PORT``` to your desired port. Upon the server starting the port the server is running on will be printed to the console.
 
 The response is an object matching the following TypeScript interface:
