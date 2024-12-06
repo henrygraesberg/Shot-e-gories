@@ -7,7 +7,7 @@ An API for getting a random category for a game of categories, and potentially a
 The project is hosted on glitch.com, and running on ["https://shotegories.glitch.me/shotegories"](https://shotegories.glitch.me/shotegories)\
 From here it can be used the same as if it was running locally, with the query option ```?withLetter=true``` returning an object with a category and letter, and anything else returning only a category
 
-**NOTE:** Glitch puts projects to sleep after 5 minutes inactivity, so the first query could take longer, as the server has to start back up upon receiving your request
+**NOTE:** Glitch puts projects to sleep after 5 minutes inactivity, so the first query could take longer, as the server has to start back up upon receiving your request (It also runs ```npm i``` every time it spools up for some reason, so it could take quite a few seconds actually)
 
 ### Locally
 Once the repository has been cloned, run the commands
