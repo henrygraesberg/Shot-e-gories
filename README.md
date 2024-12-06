@@ -21,12 +21,13 @@ node index.js
 #OR
 node .
 
-#If you're developing and want hot reload, the run
+#If you're developing and want hot reload, then run
 npm run dev
 #OR
 node --watch index.js
 #OR
 node --watch .
+#instead
 ```
 to install dependencies and start the server. A frontend simply supplying an html file and a request to the api wil run on ```localhost:3000```, while the API will run on ```http://localhost:3000/api``` by default, but this can be changed by adding a ```.env``` file and setting ```HTTP_PORT``` to your desired port. Upon the server starting the port the server is running on will be printed to the console.
 
