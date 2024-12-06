@@ -14,12 +14,19 @@ Once the repository has been cloned, run the commands
 ```bash
 npm i
 
-#Then
+#Then if you're running the API
 npm run start
 #OR
 node index.js
 #OR
 node .
+
+#If you're developing and want hot reload, the run
+npm run dev
+#OR
+node --watch index.js
+#OR
+node --watch .
 ```
 to install dependencies and start the server. A frontend simply supplying an html file and a request to the api wil run on ```localhost:3000```, while the API will run on ```http://localhost:3000/api``` by default, but this can be changed by adding a ```.env``` file and setting ```HTTP_PORT``` to your desired port. Upon the server starting the port the server is running on will be printed to the console.
 
@@ -54,7 +61,7 @@ and a response to a request sent to ```localhost:3000/api?withLetter=true``` cou
 
 ## Developing
 Follow the first steps of ["Using the API"](#using-the-api) to install dependencies and run the server.\
-The server does not support hot reload unless you run ```npm run start``` or add the ```--watch``` flag.  If you do not use these options, then every time you make a change and want to query the API, you need to manually reload the server.\
+The server does not support hot reload unless you run ```npm run dev``` or add the ```--watch``` flag.  If you do not use these options, then every time you make a change and want to query the API, you need to manually reload the server.\
 This only applies to changes made to the ```index.js``` file, as all the other files are read from at the time of the request.
 
 The project was built with [Node.js](https://nodejs.org) and [Express.js](https://expressjs.com/), and uses Nodes "fs" module to read from the ```data/categories.json``` file.
