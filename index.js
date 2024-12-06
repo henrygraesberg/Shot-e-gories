@@ -1,6 +1,6 @@
-import express from 'express'
-import dotenv from 'dotenv'
-import fs from 'fs'
+const express = require('express')
+const dotenv = require('dotenv')
+const fs = require('fs')
 
 const app = express()
 dotenv.config()
