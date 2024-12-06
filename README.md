@@ -46,13 +46,13 @@ interface ShotegoriesResponse {
 ```
 if you do
 
-Ergo, a response to a request sent to ```localhost:3000/api``` could look like:
+Ergo, a response to a request sent to ```http://localhost:3000/api``` could look like:
 ```json
 {
   "category": "Alcohol brands"
 }
 ```
-and a response to a request sent to ```localhost:3000/api?withLetter=true``` could look like:
+and a response to a request sent to ```http://localhost:3000/api?withLetter=true``` could look like:
 ```json
 {
   "category": "Alcohol brands",
