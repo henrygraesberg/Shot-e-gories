@@ -21,7 +21,7 @@ app.get('/api', (req, res) => {
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
   try {
-    const categories = fs.readFileSync('./data/categories.json')
+    const categories = fs.readFileSync(__dirname + '/data/categories.json')
 
     const parsed = JSON.parse(categories)
 
