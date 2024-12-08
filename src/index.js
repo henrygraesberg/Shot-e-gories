@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 import fs from 'node:fs'
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-    
+
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const app = express()
@@ -55,6 +55,10 @@ app.get('/api', (req, res) => {
 const httpPort = process.env.HTTP_PORT || 3000
 
 app.listen(httpPort, () => {
-  console.log(`Server is running on port: http://localhost:${httpPort}`)
-  console.log(`API endpoint at:           http://localhost:${httpPort}/api`)
+  console.log(
+    `Server is running at:      http://localhost:${httpPort}`
+  )
+  console.log(
+    `API endpoint at:           http://localhost:${httpPort}/api`
+  )
 })
