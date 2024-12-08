@@ -70,9 +70,15 @@ form {
   div {
     color: var(--text-light);
 
+    text-align: center;
+
     background-color: var(--background-dark);
 
-    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    padding-left: 3rem;
+    padding-right: 3rem;
 
     border-radius: 1rem;
 
