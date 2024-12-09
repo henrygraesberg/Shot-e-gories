@@ -1,4 +1,6 @@
-# Shotegories API
+# Shotegories API [NODE VERSION, DEPRECATED]
+This project has been rewritten with Deno, which can be found [here](https://github.com/henrygraesberg/deno-shotegories)
+
 An API for getting a random category for a game of categories, and potentially a letter for a game of shotegories\
 (Inpired by the drinking game that the [Godfrey Twins](https://www.youtube.com/@godfreytwins) like to play)
 
@@ -8,6 +10,7 @@ The API is hosted on [glitch.com](https://glitch.com), and running on ["https://
 From here it can be used the same as if it was running locally, with the query option ```?withLetter=true``` returning an object with a category and letter, and anything else returning only a category. A simple frontend is also hosted on Glitch, at the [root](https://shotegories.glitch.me), which queries the API and displays a category, with the option to include a letter in the response.
 
 **NOTE:** Glitch puts projects to sleep after 5 minutes inactivity, so the first query could take longer, as the server has to start back up upon receiving your request (It also runs ```npm i``` every time it spools up for some reason, so it could take quite a few seconds actually)
+**IT IS THEREFORE RECCOMENDED TO USE THE ENDPOINT FOR THE DENO PROJECT, FOUND AT [shotegories.graesberg.com/api](https://shotegories.graesberg.com/api) WHICH IS MUCH FASTER TO QUERY. (see [deno-shotegories repository](https://github.com/henrygraesberg/deno-shotegories) for more information). The returned information from the deno endpoint is the same as from the node endpoint)**
 
 ### Locally
 Once the repository has been cloned, run the command
