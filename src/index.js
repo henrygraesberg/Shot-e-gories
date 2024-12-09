@@ -44,12 +44,15 @@ app.get('/api', (req, res) => {
       })
     }
   } catch (err) {
-    res.status(500)
-    res.send({
+    res.status(500).send({
       message: "There was an error reading the categories file.",
       errorStack: err
     })
   }
+})
+
+app.get("*", (req, res) => {
+  res.status(404).sendFile(__dirname + '/views/404.html')
 })
 
 const httpPort = process.env.HTTP_PORT || 3000
