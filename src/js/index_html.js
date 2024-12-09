@@ -13,16 +13,22 @@ async function newCategory(e) {
   try {
     let httpStatus = null
 
+    categoryDiv.querySelector('p').innerText = "loading..."
+
     if (withLetter) {
+      letterDiv.querySelector('p').innerText = "loading..."
+
       const response = await fetch(`/api?withLetter=true`)
 
-      httpStatus = await response.status
+      httpStatus = response.status
 
       data = await response.json()
     } else {
+      letterDiv.querySelector('p').innerText = ""
+
       const response = await fetch(`/api`)
 
-      httpStatus = await response.status
+      httpStatus = response.status
 
       data = await response.json()
     }
