@@ -154,4 +154,12 @@ footer {
       text-align: center;
     }
   }
+
+  .not-found > .links {
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 1rem;
+  }
 }
